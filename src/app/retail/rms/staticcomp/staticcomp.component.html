@@ -1,0 +1,7 @@
+<p>staticcomp works!</p>
+
+<form #userForm="ngForm" (ngSubmit)="displayForm(userForm.value)">
+    <input type="text" name="username" ngModel>
+    <input type="password" name="password" ngModel>
+    <button type="submit"> Static Form Submission</button>
+</form>

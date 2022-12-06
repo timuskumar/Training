@@ -1,0 +1,24 @@
+<p>Demo of Reactive Form Module</p>
+
+<form [formGroup]="userForm">
+  <label> Username </label>
+  <input type="text" placeholder="Enter user Name" formControlName="username" />
+  <p *ngIf="username?.invalid">user is invalid</p>
+
+  <br />
+
+  <label> Email </label>
+  <input type="text" placeholder="Email" formControlName="email" />
+  
+    <p *ngIf="email?.touched">email is touched</p>
+    <p *ngIf="email?.pristine">email is pristine</p>
+    <p *ngIf="email?.valid">email is valid</p>
+    <p *ngIf="email?.invalid">email is invalid</p>
+
+
+  <br />
+
+  <button (click)="formSubmit()">Submit Form</button>
+</form>
+
+<app-staticcomp></app-staticcomp>

@@ -1,0 +1,28 @@
+<p>home works!</p>
+<button (click)="routeToEBS()"> EBS</button>
+<button (click)="routeToRetail()"> Retail </button>
+<router-outlet></router-outlet>
+
+<!-- <div appPlaceholder>
+    <span>This is span tag</span>
+</div> -->
+
+<button (click)="InsertErrorComponent()"> Insert Component Dynamically</button>
+<input type="text" #inputfield [(ngModel)]="value">
+<button (click)="senddata()"> Submit name</button>
+
+
+<ng-template appPlaceholder></ng-template>
+
+<app-test #test1> 
+    <h3 #content>This is my Projected Content </h3>
+</app-test>
+<button (click)="incr()"> Increment </button>
+<button (click)="decr()"> decrement </button>
+
+<p #first> fist paragraph </p>
+<p #first> second paragraph </p>
+<button (click)="changeBackground()"> Change Background Color </button>
+
+
+
